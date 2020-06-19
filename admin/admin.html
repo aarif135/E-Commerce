@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin </title>
+
+
+</head>
+<body>
+    <h1>ADMIN PANEL</h1>
+<input id="des" placeholder="DESCRIPTION" type="text">    
+<input id="price" placeholder="price" >
+<input id="file" type="file"/>
+<button onclick="add()"> add detail </button>
+</body>
+ 
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.15.1/firebase-app.js"></script>
+
+    <script defer src="./init-firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.15.1/firebase-analytics.js"></script>
+    
+    <!-- <script src="/__/firebase/5.8.4/firebase-firestore.js"></script> -->
+
+    <!-- <script src="/__/firebase/7.15.1/firebase-firestore.js"></script> -->
+
+    
+    
+    
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>   
+     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+
+
+     <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBbkM16qL4t7Y4ms7-LF7G10z6sw5vVtic",
+        authDomain: "ecommercebysoft.firebaseapp.com",
+        databaseURL: "https://ecommercebysoft.firebaseio.com",
+        projectId: "ecommercebysoft",
+        storageBucket: "ecommercebysoft.appspot.com",
+        messagingSenderId: "408681927192",
+        appId: "1:408681927192:web:e2b1a4539c4e640906a96d",
+        measurementId: "G-SPXP3W1SV2"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    
+   
+    <script src="./admin.js"></script>
+
+</html>

@@ -1,0 +1,119 @@
+html,
+body {
+    scroll-behavior: smooth; 
+}
+
+/* ===============================================================================
+                                Navigation Area
+================================================================================== */
+
+.navbar {
+    background-color: rgb(49, 39, 39) !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.navbar-brand>img {
+    width: auto;
+    height: 60px;
+}
+
+.navbar-text>input {
+    height: 40px;
+    width: 300px;
+    color: gray;
+}
+.navbar-toggler{
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.navbar-toggler:hover{
+    /* box-shadow: 6px 2px 10px rgb(255, 255, 255); */
+    color: #fff !important;
+    background-color: rgb(235, 235, 235);
+}
+span>.navbar-toggler-icon:hover{
+    color: #fff;
+}
+
+
+
+/* ===============================================================================
+                                    Cardss Area
+================================================================================== */
+
+.container {
+    margin-top: 10%;
+}
+
+
+.card_text{
+    margin: 20px 10px 20px 10px;
+    /* background-color: rgb(49, 39, 39); */
+    /* color: #fff; */
+    transition: 1s;
+    border-radius: 20%;
+    height: 78%;
+}
+h1{
+    font-size: 50px;
+    padding: 20px 10px 20px 10px;
+    
+    text-shadow: 3px 3px 12px #FF0108, 3px 3px 13px rgb(1, 11, 153);
+    font-family: cursive;
+
+}
+.card_text:hover{
+    box-shadow:  3px 3px 12px #FF0108, 3px 3px 13px rgb(1, 11, 153);
+    background-color: rgb(49, 39, 39);
+    color: #fff;
+    padding: 20px -10% 20px -10%;
+    
+}
+
+.card {
+    margin: 30px 10px 20px 10px;
+    padding: 40px 10px 30px 10px;
+    transition: 1s;
+}
+
+.btn-success {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 66, 221);
+    transition: 1s;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: rgb(6, 234, 255);
+    box-shadow: 5px 4px 4px black;
+
+}
+/* .card:hover{
+    box-shadow: 5px 4px 15px black;
+    cursor: pointer;
+} */
+/* .card:focus{
+    cursor: pointer;
+    background-color: green;
+} */
+
+
+
+
+/* ===============================================================================
+                                    Footer Area
+================================================================================== */
+
+.copy-right_text {
+    background-color: rgb(21, 142, 255);
+    height: 5%;
+    margin-top: 10%;
+    padding-top: 2%;
+    font-weight: 600;
+}

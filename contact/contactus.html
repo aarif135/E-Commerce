@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="../css/bootstrap css/bootstrap.min.csss">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logoo.png">
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        body {
+            /* background:rgb(0, 255, 234); */
+            background-image: linear-gradient(-225deg, rgb(208, 243, 255) 0%, rgb(251, 201, 255) 100%);
+            background-image: linear-gradient(to top, rgb(208, 243, 255) 0%, rgb(251, 201, 255) 100%);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+        }
+
+        .address-icon i {
+            font-size: 36px;
+            line-height: 32px;
+        }
+
+        .icons i {
+            color: #fff;
+            padding: 8px 0px;
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        .fa-facebook {
+            background-color: #3A5A99;
+            border-radius: 10px;
+        }
+
+        .fa-twitter {
+            background-color: #39CBFA;
+            border-radius: 10px;
+        }
+
+        .fa-linkedin {
+            background-color: #3D99C0;
+            border-radius: 10px;
+        }
+
+        .fa-github {
+            background-color: #000;
+            border-radius: 10px;
+        }
+
+        .fa-whatsapp {
+            background-color: rgb(33, 98, 71);
+            border-radius: 10px;
+        }
+        
+        .fa-whatsapp:hover,
+        .fa-github:hover,
+        .fa-linkedin:hover,
+        .fa-twitter:hover,
+        .fa-facebook:hover
+        {
+            box-shadow: 5px 4px 6px #fff;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Navigation Area Start -->
+    <div>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light " role="navigation">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logoo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../products/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../signup/signup.html">Sign UP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login/login.html">Login</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <input type="search" placeholder="Search..." class="form-control">
+                </span>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- Navigation Area END -->
+
+
+    <br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-12">
+                <div class="row">
+                    <div class="col-lg-12 col-12 p-0 contact-us">
+                        <h4 class="">CONTACT US</h4>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row  pt-3 pb-3 mb-4"
+                    style="    background-image: linear-gradient(-225deg, rgb(208, 243, 255) 50%, rgb(251, 201, 255) 50%);">
+                    <div class="col-lg-12">
+                        <h6>ADDRESS :</h6>
+                    </div>
+                    <div class="col-lg-4 col-4">
+                        Shah faisal Colony,
+                        Karchi,Pakistan
+                    </div>
+                    <div class="col-lg-4 col-4">
+                        <p class="m-0 text-danger"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                            +92 3162650840
+                        </p>
+                        <p class="m-0 text-info"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            Softtechnic92@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-4 address-icon text-center text-danger">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-3 mb-4"
+                    style="    background-image: linear-gradient(-225deg, rgb(208, 243, 255) 50%, rgb(251, 201, 255) 50%);">
+                    <div class="col-lg-6 col-12">
+                        <form>
+                            <div class="form-row mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Name :" required>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Company :" required>
+                                </div>
+                            </div>
+                            <div class="form-row mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Email :" required>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Mobile :" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Message :"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success mb-4">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div style="width: 100%">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57893.11946661381!2d67.05638581905856!3d24.921167550864624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338b808bfd6b1%3A0x997b1a02c2570822!2sGulshan-e-Iqbal%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1582225939373!5m2!1sen!2s"
+                                width="100%" height="300px" frameborder="0" style="border:0;"
+                                allowfullscreen=""></iframe>
+                        </div>
+
+                        <div class="icons">
+                            <a href="http://wa.me/923162650840" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/owais2051/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-twitter" target="_blank"></i></a>
+                            <a href="https://www.linkedin.com/in/muhammad-owais-219540177/"  target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href=""><i class="fa fa-github"  target="_blank"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contactus Area End -->
+
+    <!-- Copy Rights Area Start -->
+
+    <!-- <footer class="footer fixed-bottom">
+        <div class="copy-right_text">
+            <div class="container ">
+                <div class="footer_border "></div>
+                <div class="row ">
+                    <div class="col-xl-12 ">
+                        <p class="copy_right text-center " style="color: #000; ">
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved by <a href="https://thesoftechnic.web.app" target="_blank "
+                                class="web " style="color: #000; ">Softtechnic.com</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer> -->
+
+    <!-- Copy Rights Area END -->
+
+
+
+
+
+
+    <!-- JavaScript Links -->
+
+    <!-- <script src="../js/bootstrap js/bootstrap.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

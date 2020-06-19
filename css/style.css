@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*==========================================================================
+			 						General CSS
+===========================================================================*/
+
+html,
+body {
+    scroll-behavior: smooth; 
+    height: 100%;
+    /* margin: 10px 0px 10px 0px; */
+    /* width: 100%; */
+    margin-right: -1%;
+}
+
+
+/* ===============================================================================
+                                Navigation Area
+================================================================================== */
+
+.navbar {
+    background-color: rgb(49, 39, 39) !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.navbar-brand>img {
+    width: auto;
+    height: 60px;
+}
+
+.navbar-text>input {
+    height: 40px;
+    width: 300px;
+    color: gray;
+}
+.navbar-toggler{
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.navbar-toggler:hover{
+    /* box-shadow: 6px 2px 10px rgb(255, 255, 255); */
+    color: #fff !important;
+    background-color: rgb(235, 235, 235);
+}
+span>.navbar-toggler-icon:hover{
+    color: #fff;
+}
+/* ===============================================================================
+                                    Home Area
+================================================================================== */
+
+.home_image {
+    background-image: url("../img/background.jpg");
+    /* width: 2000px !important; */
+    width: 100% !important;
+    height: 100%;
+    /* height: 500px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin: 0 0 0 0 !important; */
+}
+
+.home_text>h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+
+
+/* ===============================================================================
+                                Card Area
+================================================================================== */
+.card_text{
+    margin: 20px 10px 20px 10px;
+    /* background-color: rgb(49, 39, 39); */
+    /* color: #fff; */
+    transition: 1s;
+    border-radius: 20%;
+    height: 78%;
+}
+h1{
+    font-size: 50px;
+    padding: 20px 10px 20px 10px;
+    
+    text-shadow: 3px 3px 12px #FF0108, 3px 3px 13px rgb(1, 11, 153);
+    font-family: cursive;
+
+}
+.card_text:hover{
+    box-shadow:  3px 3px 12px #FF0108, 3px 3px 13px rgb(1, 11, 153);
+    background-color: rgb(49, 39, 39);
+    color: #fff;
+    padding: 20px -10% 20px -10%;
+    
+}
+
+.card {
+    margin: 30px 10px 20px 10px;
+    padding: 40px 10px 30px 10px;
+    transition: 1s;
+}
+
+.btn-success {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 66, 221);
+    transition: 1s;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: rgb(6, 234, 255);
+    box-shadow: 5px 4px 4px black;
+
+}
+.card:hover{
+    box-shadow: 5px 4px 15px black;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.card:focus{
+    cursor: pointer;
+    background-color: green;
+}
+
+.card-title:hover, .card-text:hover{
+    /* text-shadow: 2px 3px 3px red; */
+    /* background-color: red; */
+    font-weight: 900 !important;
+}
+
+
+/* ===============================================================================
+                                    Footer Area
+================================================================================== */
+
+.copy-right_text {
+    background-color: rgb(21, 142, 255);
+    height: 5%;
+    margin-top: 10%;
+    padding-top: 2%;
+    font-weight: 600;
+}
+
+.icon_footer{
+    color: #fff;
+    text-shadow: 3px 4px 2px black;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.icon_footer:hover{
+    color: #000 !important;
+}
+
+/* ===============================================================================
+                                    About Area
+================================================================================== */
+
+.about_text {
+    margin-top: 30%;
+}
+
+.about_image>img {
+    margin-top: 30%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* =================================================================================
+                                Contact US 
+====================================================================================*/
+
+input[type=text],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(3, 5, 122);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4000f1;
+    transition: 2s;
+}
+
+.contact {
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    /* font-weight: bolder; */
+    font-size: 26px;
+    font-family: cursive;
+}
+
+.login_lable {
+    display: inline-block;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+.footer-btn{
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(0, 66, 221);
+    margin-bottom: 20px;
+    transition: 1s;
+    border-radius: 20px;
+}
+.footer-btn:hover{
+    background-color: rgb(0, 221, 221);
+    /* outline: none; */
+    border: none;
+}
+.web{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 4px 2px black;
+    transition: 1s;
+    cursor: pointer;
+}
+.web:hover{
+    color: #000;
+}
