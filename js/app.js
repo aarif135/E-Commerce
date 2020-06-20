@@ -1,4 +1,6 @@
 postadd()
+checkUser()
+let user= localStorage.getItem('userInfo')
 function postadd(){
     let post=document.getElementById("main-div")
     
@@ -26,9 +28,10 @@ function postadd(){
             addCart.innerHTML='ADD TO CART'
             console.log(addCart)
             let data=docs.data()
-           
+           let user=localStorage.getItem('userInfo')
+           addCart.addEventListener("click", addCarts.bind(null, data));
+       
             // addCart.setAttribute('onclick',"addCarts()")
-            addCart.addEventListener("click", addCarts.bind(null, data));
 
             img.setAttribute("src",data.url)
           img.setAttribute('height','150px')
@@ -52,14 +55,36 @@ function postadd(){
 
     
 }
+
 function addCarts(e){
-    let uniq=Math.random()
-    let carts={...e,uniq}
- firebase.firestore().collection('carts').add(carts ).then(res=>{
-     console.log('succesfully added to cart')
- })
+    if (user!==null) {
+        
+        let uniq=Math.random()
+        let carts={...e,uniq}
+     firebase.firestore().collection('carts').add(carts ).then(res=>{
+         console.log('succesfully added to cart')
+     })
+    }
+    else{alert('login First')}
 
 }
 function loader(){
     let spinner=document.getElementById('spinner').style.display='none'
+}
+function checkUser(){
+
+    let userLogin= localStorage.getItem('userInfo')
+    let data=JSON.parse(userLogin)
+
+    console.log(data)
+    if(data!==null){
+        
+       let signup=document.getElementById('signup').style.display='none'
+       let login=document.getElementById('login').style.display='none'
+       
+     
+     
+       
+    }
+   
 }
