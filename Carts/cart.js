@@ -1,11 +1,13 @@
 function renderCarts(){
     let div=document.getElementById('main-container')
-    console.log(div)
-    firebase.firestore().collection('carts').get().then(data=>{
+    let row=document.createElement('DIV')
+    row.setAttribute('class',"row")
+    div.appendChild(row)
+       firebase.firestore().collection('carts').get().then(data=>{
         data.forEach(docs=>{
             let innerDiv=document.createElement('DIV')
-            innerDiv.setAttribute('class',"col-md-4 col-sm-12 col-lg-3")
-            div.appendChild(innerDiv)
+            innerDiv.setAttribute('class',"col-md-4 col-sm-12 col-lg-4")
+            row.appendChild(innerDiv)
             let CardDiv=document.createElement('div')
             CardDiv.setAttribute('class',"card text-center")
             innerDiv.appendChild(CardDiv)
@@ -45,21 +47,18 @@ function renderCarts(){
 }
 renderCarts()
 function removes(e){
-    console.log(e)
-
-    firebase.firestore().collection('carts').where("uniq","==",e.uniq).get().then(querySnapshot=>{
+      firebase.firestore().collection('carts').where("uniq","==",e.uniq).get().then(querySnapshot=>{
         
         querySnapshot.forEach(doc=>{
-            console.log(doc)
-            doc.ref.delete().then(()=>{
+                       doc.ref.delete().then(()=>{
             alert("deleted")
             location.reload()
         }).catch(error=>{
-            console.log(error)
+            
         })
     
     })
     } ).catch((error=>{
-        console.log(error)
+        
     }))
 }
